@@ -6,5 +6,4 @@ const router = express.Router();
 
 router.post('/live-update', protect, updateLiveLocation); // Continuously update live location
 router.get('/live/:userId', protect, getLiveLocation); // Get live location of a user
-
 module.exports = router;
